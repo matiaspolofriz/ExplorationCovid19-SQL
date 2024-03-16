@@ -1,3 +1,5 @@
+/* Data Exploration */
+
 SELECT *
 FROM PortfolioProyect..CovidDeaths
 WHERE continent is not null
@@ -41,7 +43,7 @@ WHERE continent is not null
 GROUP BY location, Population
 ORDER BY TotalDeathCount DESC
 
--- Let´s break thing down by continent
+-- LetÂ´s break thing down by continent
 
 SELECT location, MAX(cast(total_deaths as int)) as TotalDeathCount
 FROM PortfolioProyect..CovidDeaths
